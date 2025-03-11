@@ -1,0 +1,62 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "title": "To-Do List API",
+      "description": "An API for managing a simple to-do list with API key authentication.",
+      "version": "1.0.0"
+    },
+    "servers": [
+      {
+        "url": "http://127.0.0.1:5000"
+      }
+    ],
+    "paths": {
+      "/todos": {
+        "get": {
+          "summary": "Retrieve all to-do items",
+          "description": "Returns a list of all to-do items. Requires a valid API key.",
+          "parameters": [
+            {
+              "name": "X-API-Key",
+              "in": "header",
+              "required": true,
+              "schema": {
+                "type": "string"
+              },
+              "description": "API key for authentication"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "A list of to-do items",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "integer"
+                        },
+                        "task": {
+                          "type": "string"
+                        },
+                        "done": {
+                          "type": "boolean"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "403": {
+              "description": "Unauthorized - Invalid API Key"
+            }
+          }
+        }
+      }
+    }
+  }
+  

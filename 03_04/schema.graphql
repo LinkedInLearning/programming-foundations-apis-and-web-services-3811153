@@ -1,0 +1,18 @@
+# GraphQL schema definition (SDL)
+type Todo {
+    id: Int
+    task: String
+    done: Boolean
+}
+
+type Query {
+    todo(id: Int!): Todo
+    todos: [Todo]
+}
+
+type Mutation {
+    addTodo(task: String!, done: Boolean!): Todo
+    updateTodo(id: Int!, task: String, done: Boolean): Todo
+    deleteTodo(id: Int!): Boolean
+}
+
