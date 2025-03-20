@@ -167,7 +167,7 @@ if __name__ == "__main__":
     print("\nUpdate Task Mutation:\n", result_update.data)
 
     # D) Mutation: Delete a Task
-    #    Let's remove "Clean house"
+    #    Let's remove "Test the API"
     mutation_delete = """
     mutation {
       deleteTask(title: "Test the API") {
