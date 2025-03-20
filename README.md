@@ -5,7 +5,13 @@ _See the readme file in the main branch for updated instructions and information
 
 ## Installing
 1. To use these exercise files, you must have the following installed:
-	- [list of requirements for course]
+	- Python
+	- Pip
+	- Flask
+	- flask-swagger-ui
+	- Graphene
+	- OpenAI
+	
 2. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like SourceTree.
 3. [Course-specific instructions]
 
