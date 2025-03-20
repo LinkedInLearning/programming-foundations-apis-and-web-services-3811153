@@ -23,7 +23,7 @@ AI Advisor & AWS Machine Learning Hero
 
                             
 
-Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/).
+Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/](https://www.linkedin.com/learning/instructors/kesha-williams).
 
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
