@@ -132,7 +132,7 @@ if __name__ == "__main__":
     }
     """
     result_all = schema.execute(query_all)
-    print("Initial Tasks Query:", result_all.data)
+    print("\nInitial Tasks Query:\n", result_all.data)
 
     # B) Mutation: Add a new Task
     mutation_add = """
@@ -147,7 +147,7 @@ if __name__ == "__main__":
     }
     """
     result_mutation = schema.execute(mutation_add)
-    print("Add Task Mutation:", result_mutation.data)
+    print("\nAdd Task Mutation:\n", result_mutation.data)
 
     # C) Mutation: Update a Task
     #    Let's rename "Buy groceries" -> "Buy groceries and snacks"
@@ -164,7 +164,7 @@ if __name__ == "__main__":
     }
     """
     result_update = schema.execute(mutation_update)
-    print("Update Task Mutation:", result_update.data)
+    print("\nUpdate Task Mutation:\n", result_update.data)
 
     # D) Mutation: Delete a Task
     #    Let's remove "Clean house"
@@ -180,8 +180,8 @@ if __name__ == "__main__":
     }
     """
     result_delete = schema.execute(mutation_delete)
-    print("Delete Task Mutation:", result_delete.data)
+    print("\nDelete Task Mutation:\n", result_delete.data)
 
     # E) Query again to see the final tasks
     final_query = schema.execute(query_all)
-    print("Final Tasks Query:", final_query.data)
+    print("\nFinal Tasks Query:\n", final_query.data)
