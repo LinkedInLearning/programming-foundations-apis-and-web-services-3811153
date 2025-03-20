@@ -86,7 +86,7 @@ if __name__ == "__main__":
     }
     """
     result_all = schema.execute(query_all)
-    print("Initial Books Query:", result_all.data)
+    print("\nInitial Books Query:\n", result_all.data)
 
     # B) Mutation: Add a new Book
     mutation_add = """
@@ -101,8 +101,8 @@ if __name__ == "__main__":
     }
     """
     result_mutation = schema.execute(mutation_add)
-    print("Add Book Mutation:", result_mutation.data)
+    print("\nAdd Book Mutation:\n", result_mutation.data)
 
     # C) Query again to confirm the new book was added
     result_all_after = schema.execute(query_all)
-    print("Books After Mutation:", result_all_after.data)
+    print("\nBooks After Mutation:\n", result_all_after.data)
