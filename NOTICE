@@ -6,6 +6,27 @@ See LICENSE in the project root for license information.
 
 ATTRIBUTIONS:
 
+--------------------  
+**openai**  
+*(No GitHub repo provided)*  
+License: Apache 2.0  
+http://www.apache.org/licenses/  
+--------------------  
+**pyjwt**  
+https://github.com/jpadilla/pyjwt  
+License: MIT License  
+https://github.com/jpadilla/pyjwt/blob/master/LICENSE  
+--------------------  
+**flask-swagger-ui**  
+https://github.com/sveint/flask-swagger-ui  
+License: MIT License  
+https://github.com/sveint/flask-swagger-ui/blob/master/LICENSE  
+--------------------  
+**graphene**  
+https://github.com/graphql-python/graphene  
+License: MIT License  
+https://github.com/graphql-python/graphene/blob/master/LICENSE  
+--------------------  
 
 
 Please note, this project may automatically load third party code from external 
